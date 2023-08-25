@@ -1,0 +1,142 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package activity;
+
+/**
+ *
+ * @author User
+ */
+public class MyTime {
+
+  private int hours;
+  private int minutes;
+  private int seconds;
+  private boolean meridian;
+  
+  
+  
+    public MyTime(){
+       this.hours = 0;
+       this.minutes = 0;
+       this.seconds = 0;
+       this.meridian = false;
+    }
+    public MyTime(int hours, int minutes, int seconds, boolean meridian) { //constructor
+        this.hours = hours;
+        this.minutes = minutes;
+        this.seconds = seconds;
+        this.meridian = meridian;
+        
+    }
+    
+   
+
+    public int getHours() {                                 //getters
+        return hours;
+    }
+
+    public int getMinutes() {
+        return minutes;
+    }
+
+    public int getSeconds() {
+        return seconds;
+    }
+
+    public String isMeridian() {
+        return meridian ? "AM":"PM";
+    }
+    
+   
+    public void setHours(int hours) {                                       //setters
+        this.hours = hours;
+    }
+
+    public void setMinutes(int minutes) {
+        this.minutes = minutes;
+    }
+
+    public void setSeconds(int seconds) {
+        this.seconds = seconds;
+    }
+
+    public void setMeridian(boolean meridian) {
+        this.meridian = meridian;
+    }
+
+    
+    public int advanceTime(int seconds){
+           
+        
+      return 0;
+        
+    }
+    
+    public void  tickBySeconds(){
+        
+       
+    }
+    
+    public void tickByMinute(){
+     
+    }
+    
+    
+    public void tickByHour(){
+        
+    
+}
+    
+    public void displayTime12(){
+        System.out.printf("%02d: %02d: %02d %s\n", getHours(), getMinutes(), getSeconds(), isMeridian());
+    }
+    
+    public void displayTime24(){
+        System.out.println("%02d: %02d: %02d");
+    }
+    
+  @Override
+    public String toString(){
+        
+        
+        
+        
+      return null;
+        
+    }
+ 
+}
+
+
+
+main: 
+
+package activity;
+
+
+/**
+ *
+ * @author User
+ */
+public class Activity {
+
+    
+    public static void main(String[] args) {
+        System.out.println("This is my Clock");
+        
+        MyTime newTime = new MyTime(12, 45, 7, false);
+        
+        newTime.displayTime12();
+        
+        newtime.tick
+        
+        
+        
+       
+    }
+    
+}
+
